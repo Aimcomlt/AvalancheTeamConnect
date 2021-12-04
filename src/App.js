@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+const Web3 = require('web3');
+//Inssert project here 
+const NODE_URL = "https://speedy-nodes-nyc.moralis.io/20abf57c6d83958c9af98f64/avalanche/testnet";
+const provider = new Web3.providers.HttpProvider(NODE_URL);
+const web3 = new Web3(provider);
+console.log(web3)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+      Dapp University Team-up starter kit...
+      Avalanche 
+      </h1>
     </div>
   );
 }
